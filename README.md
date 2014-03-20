@@ -8,10 +8,10 @@
   
 ffmpegのディレクトリは、スクリプトの以下に埋め込んであるので、適宜、書き換えてください。  
   
-set-variable -name FFMPEG_PATH -value "D:\tools\ffmpeg-20140228-git-669043d-win64-shared\bin" -option constant  
+`set-variable -name FFMPEG_PATH -value "D:\tools\ffmpeg-20140228-git-669043d-win64-shared\bin" -option constant`  
   
   
-PS > get-nicovideo.ps1 -u <UserID> -p <Password> -o <Output Directory> -movie_no <Movie No>[,<Movie No>...]  
+`PS > get-nicovideo.ps1 -u <UserID> -p <Password> -o <Output Directory> -movie_no <Movie No>[,<Movie No>...]`  
 -- -i : 変換対象の動画ファイル、mp3ファイルを格納しているディレクトリ  
 -- -o : 出力先ディレクトリ  
 -- -movie_no : ダウンロードしたい動画番号。カンマで区切ることで複数指定可能  
