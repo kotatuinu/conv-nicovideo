@@ -127,7 +127,7 @@ Get-ChildItem $ArgMap["-i"] | Where-Object { $_.Name -match '((.+)\.(mp3|mp4|swf
 		$mp3_cnv = ""
 	}
 
-	$command = "${FFMPEG_PATH}\${FFMPEG} -y -i ${inPath}\${file_name} ${id_tag} ${mp3_cnv} `"${outPath}\${output_file}`""
+	$command = "${FFMPEG_PATH}\${FFMPEG} -y -i `"${inPath}\${file_name}`" ${id_tag} ${mp3_cnv} `"${outPath}\${output_file}`""
 
 	Write-Output $command
 	Invoke-Expression $command
